@@ -1,5 +1,6 @@
 package com.example.listapersonalizada
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -16,5 +17,12 @@ class MainActivity : AppCompatActivity() {
         val adapter = ProductosAdapter(this, listaProductos)
 
         lista.adapter = adapter
+        // Cuando damos click a un elemento de la lista]
+        lista.setOnItemClickListener { parent, view, position, id ->
+            val intent = Intent(this, ProductoActivity::class.java)
+            intent.putExtra("producto", listaProductos[position])
+            startActivity(intent)
+        }
+
     }
 }
