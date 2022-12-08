@@ -1,16 +1,15 @@
 package com.example.listapersonalizada
 
-import android.graphics.Bitmap
-import android.icu.number.Scale
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageView
-import android.widget.Toast
-import com.android.volley.VolleyError
-import com.android.volley.VolleyLog
-import com.android.volley.toolbox.ImageRequest
+import android.widget.Button
+import com.android.volley.Request
+import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_producto.*
+import org.json.JSONArray
 
 class ProductoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,26 +17,20 @@ class ProductoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_producto)
 
         val producto = intent.getSerializableExtra("producto") as Producto
-        nombre_producto.text = producto.nombre
-        precio_producto.text = "$${producto.precio}"
-        descripcion_producto.text = producto.descripcion
-        //foto_producto.setImageResource(producto.imagen)
+        x.text = producto.nombre
+        tvUserCorreo.text = producto.correo
+        tvUsername.text = producto.nombreUsuario
 
-        //Volley
-        val cola = Volley.newRequestQueue(this)
-        val imagenRequest = ImageRequest (
-            producto.foto,
-            {
-                foto_producto.setImageBitmap(it)
-            },
-            foto_producto.layoutParams.width,
-            foto_producto.layoutParams.height,
-            ImageView.ScaleType.CENTER_CROP,
-            Bitmap.Config.ARGB_8888,
-            {
-                Toast.makeText(this, it.toString(), Toast.LENGTH_SHORT).show()
-            }
-        )
-        cola.add(imagenRequest)
+
+        btnCategorias.setOnClickListener{
+            val intent = Intent(this, CategoriaProductosActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnCarrito.setOnClickListener{
+            val intent = Intent(this, CarritoActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

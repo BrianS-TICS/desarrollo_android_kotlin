@@ -18,9 +18,8 @@ class ProductosAdapter(private val mContext:Context, private val listaProductos:
         val layout = LayoutInflater.from(mContext).inflate(R.layout.item_producto, parent, false)
         val productos = listaProductos[position]
         layout.nombre.text = productos.nombre
-        layout.precio.text = "$${productos.precio}"
-
         //Volley
+        /*
         val cola = Volley.newRequestQueue(mContext)
         val imageRequest = ImageRequest (
             productos.foto,
@@ -36,6 +35,7 @@ class ProductosAdapter(private val mContext:Context, private val listaProductos:
             }
         )
         cola.add(imageRequest)
+         */
         //layout.foto.setImageResource(productos.imagen)
         return layout
     }

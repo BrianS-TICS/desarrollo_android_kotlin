@@ -1,5 +1,5 @@
 package com.example.listapersonalizada
 
-class Producto(val nombre: String, val precio : Double, val descripcion : String, val imagen : Int, val foto : String):java.io.Serializable{
+class Producto(val id : String, val nombre: String, val correo : String, val nombreUsuario : String):java.io.Serializable{
 
 }

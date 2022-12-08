@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">ListaPersonalizada</string>
+    <string name="app_name">Ramdom Users</string>
+    <string name="user_nombre">User nombre</string>
+    <string name="username">Username</string>
+    <string name="correo">Correo</string>
+    <string name="nombre">nombre</string>
 </resources>

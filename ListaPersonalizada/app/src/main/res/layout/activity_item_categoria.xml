@@ -2,21 +2,22 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="15dp"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    tools:context=".item_categoria">
 
     <TextView
-        android:id="@+id/nombre"
-        android:layout_width="wrap_content"
+        android:id="@+id/descripcionNombre"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="20sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:text="categoria nombre"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.866" />
-
+        tools:layout_editor_absoluteY="0dp" />
 </android.support.constraint.ConstraintLayout>

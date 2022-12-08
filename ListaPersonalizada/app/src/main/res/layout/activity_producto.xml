@@ -8,47 +8,67 @@
     tools:context=".ProductoActivity">
 
     <TextView
-        android:id="@+id/nombre_producto"
+        android:id="@+id/x"
+        android:layout_width="86dp"
+        android:layout_height="32dp"
+        android:text="x"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <TextView
+        android:id="@+id/tvUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Producto nombre"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:layout_marginTop="101dp"
+        android:text="@string/username"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306" />
+
+    <TextView
+        android:id="@+id/tvUserCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/correo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.339"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carrito"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/btnCategorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categorias"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.699"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/precio_producto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="TextView"
-        android:textColor="@color/teal_700"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre_producto" />
-
-    <TextView
-        android:id="@+id/descripcion_producto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="19dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/precio_producto" />
-
-    <ImageView
-        android:id="@+id/foto_producto"
-        android:layout_width="200sp"
-        android:layout_height="200sp"
-        android:layout_marginTop="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descripcion_producto"
-        tools:srcCompat="@tools:sample/avatars" />
 </android.support.constraint.ConstraintLayout>

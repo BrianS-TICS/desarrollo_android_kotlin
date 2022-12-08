@@ -7,6 +7,7 @@ import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import kotlinx.android.synthetic.main.activity_main.*
+import org.json.JSONArray
 import org.json.JSONObject
 import java.net.URL
 
@@ -15,24 +16,30 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val url = "https://randomuser.me/api/?results=25"
+        //val url = "https://randomuser.me/api/?results=25"
+        val url = "https://fakestoreapi.com/users"
 
         val listaProductos : MutableList<Producto> = mutableListOf()
         val cola = Volley.newRequestQueue(this)
         val solicitud  = StringRequest(Request.Method.GET, url,{ response ->
-            val data = response.toString()
-            val objeto = JSONObject(data)
-            val jArray = objeto.getJSONArray("results")
-            for (i in 0 until jArray.length()){
-                val jobject = jArray.getJSONObject(i)
+            val arrDatos = JSONArray(response)
+            //val objeto = JSONObject(data)
+            //val jArray = objeto.getJSONArray("results")
+            for (i in 0 until arrDatos.length()){
+                val jobject = arrDatos.getJSONObject(i)
                 var name = jobject.getJSONObject("name")
-                var first = name.getString("first").toString()
-                var last = name.getString("last").toString()
+                var first = name.getString("firstname").toString()
+                var last = name.getString("lastname").toString()
 
+                var email = jobject.getString("email").toString()
+                var userName = jobject.getString("username").toString()
+                /*
                 var picture = jobject.getJSONObject("picture")
                 var large = picture.getString("large")
+                */
+                var id = jobject.getString("id").toString()
                 var nombre = "$first $last"
-                listaProductos.add(i,Producto( nombre, 0.00, "", 0, large))
+                listaProductos.add(i,Producto( id, nombre, email, userName))
             }
 
             val adapter = ProductosAdapter(this, listaProductos)
