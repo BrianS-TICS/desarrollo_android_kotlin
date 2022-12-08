@@ -8,8 +8,28 @@
     tools:context=".CarritoActivity">
 
   <ListView
-      android:layout_width="409dp"
-      android:layout_height="729dp"
-      tools:layout_editor_absoluteX="1dp"
-      tools:layout_editor_absoluteY="1dp" />
+      android:id="@+id/lsCarrito"
+      android:layout_width="412dp"
+      android:layout_height="603dp"
+      android:layout_marginBottom="48dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      tools:layout_editor_absoluteX="0dp" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:layout_marginBottom="20dp"
+      android:text="Su carrito"
+      android:textAlignment="center"
+      android:textSize="24sp"
+      app:layout_constraintBottom_toTopOf="@+id/_dynamic"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="1.0"
+      tools:text="Su carrito" />
+
 </android.support.constraint.ConstraintLayout>

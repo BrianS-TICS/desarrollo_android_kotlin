@@ -29,6 +29,7 @@ class ProductoActivity : AppCompatActivity() {
 
         btnCarrito.setOnClickListener{
             val intent = Intent(this, CarritoActivity::class.java)
+            intent.putExtra("productoUser", producto)
             startActivity(intent)
         }
 

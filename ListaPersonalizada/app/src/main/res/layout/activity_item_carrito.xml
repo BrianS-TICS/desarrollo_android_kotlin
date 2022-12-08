@@ -3,61 +3,60 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="140sp"
+    android:layout_height="120sp"
     android:padding="10sp"
-    tools:context=".item_filtradoActivity">
+    tools:context=".item_carritoActivity">
 
     <TextView
-        android:id="@+id/tvDescripcion"
-        android:layout_width="288dp"
-        android:layout_height="56dp"
-        android:isScrollContainer="true"
-        android:scrollbars="vertical"
-        android:scrollHorizontally="false"
+        android:id="@+id/tvCodigo"
+        android:layout_width="131dp"
+        android:layout_height="38dp"
+        android:padding="10sp"
         android:text="TextView"
-        android:textSize="10sp"
-        android:verticalScrollbarPosition="defaultPosition"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.078"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.94" />
+        app:layout_constraintVertical_bias="0.914" />
 
     <TextView
-        android:id="@+id/tvNombreProducto"
-        android:layout_width="288dp"
-        android:layout_height="32dp"
+        android:id="@+id/tvCantidad"
+        android:layout_width="92dp"
+        android:layout_height="29dp"
         android:text="TextView"
-        android:textSize="12sp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.579"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/ivProducto"
-        android:layout_width="94dp"
-        android:layout_height="86dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.923" />
 
     <TextView
-        android:id="@+id/tvPrecioProducto"
-        android:layout_width="179dp"
-        android:layout_height="12dp"
-        android:text="TextView"
-        android:textSize="10sp"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Codigo de producto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.328" />
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Cantidad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.197" />
 </android.support.constraint.ConstraintLayout>

@@ -27,14 +27,17 @@ class ProductosPorCategoriaActivity : AppCompatActivity() {
             val arrDatos = JSONArray(response)
 
             for (i in 0 until arrDatos.length()){
-
-                listaProductosFiltrados.add(i, ProductoMaterial( "b",  2.9, "s", "s"))
+                val jobject = arrDatos.getJSONObject(i)
+                var nombre = jobject.getString("title").toString()
+                var precio = jobject.getString("price").toString()
+                var descripcion = jobject.getString("description").toString()
+                var image = jobject.getString("image").toString()
+                listaProductosFiltrados.add(i, ProductoMaterial( nombre,  precio, descripcion, image))
             }
 
             val adapter = ProductosPorCategoriaAdapter(this, listaProductosFiltrados)
             lvProductosFiltrados.adapter = adapter
         },{})
         cola.add(solicitud)
-
     }
 }

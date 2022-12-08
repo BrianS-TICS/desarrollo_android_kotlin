@@ -34,7 +34,7 @@ class CategoriaProductosActivity : AppCompatActivity() {
         // Cuando damos click a un elemento de la lista]
         lsCategorias.setOnItemClickListener { parent, view, position, id ->
             val intent = Intent(this, ProductosPorCategoriaActivity::class.java)
-            intent.putExtra("categorias", listaCategorias[position])
+            intent.putExtra("categoria", listaCategorias[position])
             startActivity(intent)
         }
     }

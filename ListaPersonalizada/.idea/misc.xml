@@ -13,7 +13,12 @@
         <entry key="..\:/Users/brian/AndroidStudioProjects/desarrollo_android_kotlin/ListaPersonalizada/app/src/main/res/layout/activity_producto.xml" value="0.33" />
         <entry key="..\:/Users/brian/AndroidStudioProjects/desarrollo_android_kotlin/ListaPersonalizada/app/src/main/res/layout/activity_productos_por_categoria.xml" value="0.2509057971014493" />
         <entry key="..\:/Users/brian/AndroidStudioProjects/desarrollo_android_kotlin/ListaPersonalizada/app/src/main/res/layout/item_producto.xml" value="0.26358695652173914" />
+        <entry key="..\:/Users/brian/OneDrive/Escritorio/Android Studio/desarrollo_android_kotlin/ListaPersonalizada/app/src/main/res/layout/activity_carrito.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/brian/OneDrive/Escritorio/Android Studio/desarrollo_android_kotlin/ListaPersonalizada/app/src/main/res/layout/activity_categoria_productos.xml" value="0.1" />
+        <entry key="..\:/Users/brian/OneDrive/Escritorio/Android Studio/desarrollo_android_kotlin/ListaPersonalizada/app/src/main/res/layout/activity_item_carrito.xml" value="0.5" />
+        <entry key="..\:/Users/brian/OneDrive/Escritorio/Android Studio/desarrollo_android_kotlin/ListaPersonalizada/app/src/main/res/layout/activity_item_filtrado.xml" value="0.6408839779005525" />
         <entry key="..\:/Users/brian/OneDrive/Escritorio/Android Studio/desarrollo_android_kotlin/ListaPersonalizada/app/src/main/res/layout/activity_producto.xml" value="0.33" />
+        <entry key="..\:/Users/brian/OneDrive/Escritorio/Android Studio/desarrollo_android_kotlin/ListaPersonalizada/app/src/main/res/layout/activity_productos_por_categoria.xml" value="0.33" />
       </map>
     </option>
   </component>
@@ -22,5 +27,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.33" />
+      </ProjectState>
+    </option>
   </component>
 </project>
